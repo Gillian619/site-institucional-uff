@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +9,76 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>inscrições</title>
 </head>
+
 <body>
-    <form id="form1">
-        <section class="row">
-            <div class="mb-3 col">
-                <label for="1name">Nome</label>
-                <input required type="text" id="1name" class="form-control">
-                <div class="valid-feedback">ok</div>
-                <div class="invalid-feedback">Informe seu nome</div>
-            </div>
-            <div class="mb-3 col">
-                <label for="2name">Sobreome</label>
-                <input required type="text" id="2name" class="form-control">
-                <div class="valid-feedback">ok</div>
-                <div class="invalid-feedback">Informe seu sobrenome</div>
-            </div>
-            <div class="mb-3 col">
-                <label for="BirthDate">Data De Nascimento</label>
-                <input required id="BirthDate" class="form-control" type="date" />
-                <div class="valid-feedback">ok</div>
-                <div class="invalid-feedback">Informe sua data de Nascimento</div>
-            </div>
-        </section>
+    <header>
+        <div class="row navbar">
+            <a href="index.html" class="col"><img src="../img/logo-uff.png" alt="UFF" width="125"></a>
+            <nav class="col-10">
+                <a href="pages/campus.html">Campus</a>
+                <a href="pages/cursos.html">Cursos</a>
+                <a href="pages/vestibulares.html">Vestibulares</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h2>Inscrições</h2>
+        <form id="form1" class="was-validated">
+            <section class="row">
+                <div class="mb-3 col">
+                    <label for="1name">Nome</label>
+                    <input required type="text" id="1name" class="form-control">
+                    <div class="valid-feedback">ok</div>
+                    <div class="invalid-feedback">Informe seu nome</div>
+                </div>
+                <div class="mb-3 col">
+                    <label for="2name">Sobreome</label>
+                    <input required type="text" id="2name" class="form-control">
+                    <div class="valid-feedback">ok</div>
+                    <div class="invalid-feedback">Informe seu sobrenome</div>
+                </div>
+                <div class="mb-3 col">
+                    <label for="BirthDate">Data De Nascimento</label>
+                    <input required id="BirthDate" class="form-control" type="date" />
+                    <div class="valid-feedback">ok</div>
+                    <div class="invalid-feedback">Informe sua data de Nascimento</div>
+                </div>
+            </section>
+            <section class="row">
+                <div class="mb-3">
+                    <h3>Pessoal</h3>
+                    <div class="form-check  col">
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioM" required>
+                        <label class="form-check-label" for="inputRadioM">
+                            HOMEM
+                        </label>
+                    </div>
+                    <div class="form-check  col">
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioF" required>
+                        <label class="form-check-label" for="inputRadioF">
+                            MULHER
+                        </label>
+                    </div>
+                    <div class="form-check  col">
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioO" required>
+                        <label class="form-check-label" for="inputRadioO">
+                            OUTRO
+                        </label>
+                        <input type="text" name="gender"/>
+                        <div class="valid-feedback">ok</div>
+                        <div class="invalid-feedback">identifique seu genero</div>
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="inputemail">Endereço de E-mail</label>
+                        <input required type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                        <div class="valid-feedback">ok</div>
+                        <div class="invalid-feedback">informe seu Endereço de E-mail</div>
+                    </div>
+            </section>
+    </section>
     </form>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
