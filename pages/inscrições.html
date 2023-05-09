@@ -23,6 +23,7 @@
     </header>
     <section>
         <h2>Inscrições</h2>
+        <h3>Pessoal</h3>
         <form id="form1" class="was-validated">
             <section class="row">
                 <div class="mb-3 col">
@@ -46,7 +47,6 @@
             </section>
             <section class="row">
                 <div class="mb-3">
-                    <h3>Pessoal</h3>
                     <div class="form-check  col">
                         <input class="form-check-input" type="radio" name="gender" id="inputRadioM" required>
                         <label class="form-check-label" for="inputRadioM">
@@ -64,18 +64,70 @@
                         <label class="form-check-label" for="inputRadioO">
                             OUTRO
                         </label>
-                        <input type="text" name="gender"/>
                         <div class="valid-feedback">ok</div>
                         <div class="invalid-feedback">identifique seu genero</div>
                     </div>
-                    <div class="mb-3 col-6">
-                        <label for="inputemail">Endereço de E-mail</label>
-                        <input required type="email" class="form-control" id="inputEmail" placeholder="E-mail">
-                        <div class="valid-feedback">ok</div>
-                        <div class="invalid-feedback">informe seu Endereço de E-mail</div>
-                    </div>
+                </div>
+                <div class="mb-3 col">
+                    <label for="inputemail">Endereço de E-mail</label>
+                    <input required type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                    <div class="valid-feedback">ok</div>
+                    <div class="invalid-feedback">informe seu Endereço de E-mail</div>
+                </div>
             </section>
-    </section>
+            <section class="row">
+                <div class="mb-3 col">
+                    <label for="inputFile" class="form-label">RG</label>
+                    <input required class="form-control" type="file" id="inputFile">
+                </div>
+                <div class="mb-3 col">
+                    <label for="inputFile" class="form-label">Sertidão</label>
+                    <input required class="form-control" type="file" id="inputFile">
+                </div>
+                <div class="mb-3 col">
+                    <label for="inputFile" class="form-label">Diploma</label>
+                    <input required class="form-control" type="file" id="inputFile">
+                </div>
+            </section>
+            <section class="row">
+                <div class="mb-3">
+                    <label for="inputSelect" class="form-label">Cidade</label>
+                    <select class="form-select" id="inputSelect" placeholder="Selecione uma cidade" required>
+                        <option value="01">Rio de janeiro</option>
+                        <option value="02">Angra dos Reis</option>
+                        <option value="03">Niteroi</option>
+                        <option value="04">Rio das Ostras</option>
+                        <option value="05">Campos dos Goytacazes</option>
+                        <option value="06">Nova Friburgo</option>
+                        <option value="07">Santo Antônio de Pádua</option>
+                        <option value="08">Oriximiná - PA</option>
+                        <option value="09">Macaé</option>
+                        <option value="10">Volta Redonda</option>
+                        <option selected value="00">Selecione uma cidade</option>
+                        <div class="valid-feedback">ok</div>
+                        <div class="invalid-feedback">selecione uma cidade</div>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="inputSelect" class="form-label">cursos</label>
+                    <select class="form-select" id="inputSelect" placeholder="Selecione um cursos" required>
+                        <option value="01">placeholder</option>
+                        <option value="02">placeholder</option>
+                        <option value="03">placeholder</option>
+                        <option value="04">placeholder</option>
+                        <option value="05">placeholder</option>
+                        <option value="06">placeholder</option>
+                        <option value="07">placeholder</option>
+                        <option value="08">placeholder</option>
+                        <option value="09">placeholder</option>
+                        <option value="10">placeholder</option>
+                        <option selected value="00">Selecione um cursos</option>
+                        <div class="valid-feedback">ok</div>
+                        <div class="invalid-feedback">selecione um cursos</div>
+                    </select>
+                </div>
+            </section>
+            <button class="btn btn-success">Enviar</button>
     </form>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
