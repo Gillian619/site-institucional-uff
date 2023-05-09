@@ -1,0 +1,15 @@
+#carouselExample{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar{
+    background-color: #dddddd;
+}
+body {
+    background-color: #124673;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #cccccc;
+}
